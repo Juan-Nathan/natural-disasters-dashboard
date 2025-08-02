@@ -1,0 +1,57 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 400,
+    "background": "#fdf9f4",
+    "data": {
+      "values": [
+        {"Disaster Type": "Drought", "Average Deaths": 11.0, "Dummy": 8.7},
+        {"Disaster Type": "Earthquake", "Average Deaths": 148.28571428571428, "Dummy": 145.98571428571427},
+        {"Disaster Type": "Epidemic", "Average Deaths": 155.73333333333332, "Dummy": 153.4333333333333},
+        {"Disaster Type": "Extreme temperature", "Average Deaths": 38.5, "Dummy": 36.2},
+        {"Disaster Type": "Flood", "Average Deaths": 26.486486486486488, "Dummy": 24.186486486486487},
+        {"Disaster Type": "Landslide", "Average Deaths": 29.7027027027027, "Dummy": 27.4027027027027},
+        {"Disaster Type": "Mass movement (dry)", "Average Deaths": 17.0, "Dummy": 14.7},
+        {"Disaster Type": "Storm", "Average Deaths": 103.13138686131387, "Dummy": 100.83138686131388},
+        {"Disaster Type": "Volcanic activity", "Average Deaths": 108.875, "Dummy": 106.575},
+        {"Disaster Type": "Wildfire", "Average Deaths": 19.0, "Dummy": 16.7}
+    ]    
+    },
+    "layer": [
+      {
+        "mark": "rule",
+        "encoding": {
+          "y": {
+            "field": "Dummy",
+            "type": "quantitative",
+            "axis": {"title": "Average Number of Deaths"}
+          },
+          "x": {
+            "field": "Disaster Type",
+            "type": "nominal",
+            "axis": {"title": "Disaster Type"}
+          }
+        }
+      },
+      {
+        "mark": {"type": "circle", "size": 150},
+        "encoding": {
+          "y": {
+            "field": "Average Deaths",
+            "type": "quantitative"
+          },
+          "x": {
+            "field": "Disaster Type",
+            "type": "nominal",
+            "axis": {"labelAngle": -45}
+          },
+          "color": {"value": "#d35400"},
+          "tooltip": [
+            {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type"},
+            {"field": "Average Deaths", "type": "quantitative", "title": "Average Number of Deaths", "format": ".0f"}
+        ]
+        }
+      }
+    ]
+  }
+  

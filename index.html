@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Natural Disaster Visualisations | Southeast Asia</title>
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS from css folder -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- Heading and description -->
+    <div class="pure-g">
+      <div class="pure-u-1-1">
+        <h1>Natural Disasters in Southeast Asia</h1>
+        <p>From 2010 to 2021, Southeast Asia has been marked by frequent and devastating natural disasters, ranging from storms and earthquakes to volcanic eruptions and floods.
+          This page presents a comprehensive presentation of these events through a series of interactive visualisations. Navigate through them to better understand how different
+          countries in Southeast Asia have experienced natural disasters over the past decade.</p>
+      </div>
+    </div>
+
+    <!-- First Visualisation: Proportional Symbol Map -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>Natural Disasters</h2>
+          <p>This proportional symbol map visualises the location, type, and number of casualties (including injuries and deaths) caused by natural disasters across Southeast Asia. 
+             Use the filters to select a specific country, disaster type, or year.</p>
+        </div>
+        <div class="pure-u-1-1 centered-vis">
+          <div id="vis1" class="vis-container"></div>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>The most prominent natural disasters in Southeast Asia are floods, storms, and earthquakes. The Philippines and Indonesia experience the highest occurrences of these events.
+           This map also highlights regional hotspots for different disaster types. For instance, storms significantly impact the Philippines due to its location along the Pacific typhoon belt. 
+           Meanwhile, volcanic activity mainly occurs in Indonesia, which sits on the Pacific Ring of Fire—a region known for its high concentration of active volcanoes.
+        </p>
+      </div>
+    </div>
+
+    <!-- Second Visualisation: Choropleth Map -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>Natural Disaster Risk</h2>
+          <p>This choropleth map visualises the overall natural disaster risk in Southeast Asian countries. The colour scale indicates risk levels.</p>
+        </div>
+      </div>
+      <div class="pure-u-1-1 centered-vis">
+        <div id="vis2" class="vis-container"></div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>The countries with the highest risk of natural disasters are the Philippines and Vietnam, due to the high frequency of natural disasters relative to their population and land area.
+           In contrast, countries like Brunei and Laos have much lower risk levels, reflecting their more stable geographical locations and reduced exposure to natural hazards.</p>
+      </div>
+    </div>
+
+    <!-- Third Visualisation: Bar Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>Frequency of Natural Disasters</h2>
+          <p>This bar chart shows the total frequency of natural disasters across Southeast Asian countries.</p>
+        </div>
+        <div class="pure-u-1-1 centered-vis">
+          <div id="vis3" class="vis-container"></div>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>Despite its relatively small land area, the Philippines experiences the highest frequency of natural disasters, underscoring its highly vulnerable geographical location. 
+           Indonesia also faces frequent disasters due to its large land area and exposure to various natural hazards. In contrast, nations like Singapore and Timor-Leste experience
+           far fewer disaster occurrences, not only because of their smaller land areas but also due to their more stable geographical positions.</p>
+      </div>
+    </div>
+
+    <!-- Fourth Visualisation: Donut Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>Proportion of Natural Disasters</h2>
+          <p>This donut chart shows the distribution of natural disaster types in each Southeast Asian country. Use the filter to focus on the disaster composition of a specific country.</p>
+        </div>
+        <div class="pure-u-1-1 centered-vis">
+          <div id="vis4" class="vis-container"></div>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>For most Southeast Asian countries, floods are the dominant type of natural disaster, reflecting the region's vulnerability to heavy rainfall. 
+           However, in the Philippines, storms are the most common disaster type, highlighting its vulnerability to tropical cyclones. Meanwhile, Indonesia experiences a mix of natural hazards,
+           with earthquakes and landslides also playing significant roles.</p>
+      </div>
+    </div>
+
+    <!-- Fifth Visualisation: Stacked Area Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>Deaths per Year by Country</h2>
+          <p>This stacked area chart visualises the number of deaths caused by natural disasters each year across Southeast Asian countries. Use the filter to focus on a specific country.</p>
+        </div>
+        <div class="pure-u-1-1 centered-vis">
+          <div id="vis5" class="vis-container"></div>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>The years 2013 and 2018 stand out for having the highest number of deaths caused by natural disasters in the region. In 2013, the Philippines was hit hardest, largely due to Typhoon Haiyan,
+           one of the most powerful storms ever recorded, resulting in significant loss of life. Similarly, in 2018, Indonesia saw a sharp increase in deaths, mainly caused by the earthquake (tsunami) in Sulawesi 
+           and the volcanic eruption of Anak Krakatao. The number of deaths fluctuates year by year, underscoring the unpredictability of natural disasters in the region.</p>
+      </div>
+    </div>
+
+    <!-- Sixth Visualisation: Lollipop Chart -->
+    <div class="pure-g">
+      <div class="pure-u-1-1 full-width-section">
+        <div class="description">
+          <h2>The Deadliest Natural Disaster Types</h2>
+          <p>This lollipop chart illustrates the average number of deaths caused by each type of natural disaster, identifying which ones tend to be the most dangerous in terms of human life.</p>
+        </div>
+        <div class="pure-u-1-1 centered-vis">
+          <div id="vis6" class="vis-container"></div>
+        </div>
+      </div>
+      <div class="pure-u-1-1">
+        <p>Epidemics and earthquakes are the deadliest natural disaster types on average, causing the highest number of fatalities. Volcanic activities and storms also rank high, contributing significantly to the death toll in the region.
+           On the other hand, droughts and mass movements (dry) have the lowest average fatalities, reflecting their generally less lethal nature compared to other disaster types.</p>
+      </div>
+    </div>
+
+    <div class="pure-g">
+      <div class="pure-u-1-1 small-font">
+        <p>This visualisation was created by Juan Nathan. Data sourced from <a href="https://data.opendevelopmentmekong.net/dataset/disaster-in-southeast-asia-from-1900-to-2021" target="_blank">Open Development Mekong</a>.</p>
+      </div>
+    </div>
+
+  </div> <!-- end page -->
+
+  <script type="text/javascript">
+    // First visualisation
+    var specVis1 = 'natural_disasters.vg.json';
+
+    // Second visualisation
+    var specVis2 = 'natural_disaster_risk.vg.json';
+
+    // Third visualisation
+    var specVis3 = 'natural_disasters_frequency.vg.json';
+
+    // Fourth visualisation
+    var specVis4 = 'natural_disasters_proportion.vg.json';
+
+    // Fifth visualisation
+    var specVis5 = 'deaths_per_year_country.vg.json';
+
+    // Sixth visualisation
+    var specVis6 = 'avg_deaths_per_disaster_type.vg.json';
+
+    // Embed first visualisation
+    vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    // Embed second visualisation
+    vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    // Embed third visualisation
+    vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    // Embed fourth visualisation
+    vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    // Embed fifth visualisation
+    vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+
+    // Embed sixth visualisation
+    vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
+    }).catch(console.error);
+  </script>
+</body>
+
+</html>

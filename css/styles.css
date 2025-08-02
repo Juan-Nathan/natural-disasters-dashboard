@@ -1,0 +1,89 @@
+/* Font Styling */
+body * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main Title */
+h1 {
+    font-family: 'Georgia', serif;
+    font-weight: 900;
+    color: #d35400;
+}
+
+/* General Body and Background */
+body {
+    background: linear-gradient(to bottom, #e9dac1, #f0ece2);
+    color: black;
+}
+
+/* Page Container */
+.page {
+    width: 850px;
+    background-color: #fdf9f4;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+    border-radius: 10px;
+}
+
+/* Visualization Container */
+.vis-container {
+    width: 100%;
+}
+
+/* Headings and Descriptions */
+.description h2 {
+    margin-top: 0px;
+    color: #d35400;
+}
+
+.description p {
+    color: black;
+    line-height: 1.5;
+}
+
+.pure-g p {
+    color: black;
+    line-height: 1.5;
+}
+
+.description-right {
+    padding-left: 20px;
+}
+
+.description-left {
+    padding-right: 20px;
+}
+
+.pure-g {
+    margin-bottom: 40px;
+}
+
+.small-font {
+    font-size: 14px;
+    color: black;
+}
+
+a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e67e22;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #d35400;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}

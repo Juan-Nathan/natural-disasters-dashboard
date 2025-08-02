@@ -1,0 +1,77 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 700,
+    "height": 400,
+    "background": "#fdf9f4",
+    "data": {
+      "url": "https://raw.githubusercontent.com/JuanNathan/DataVisualisation2/refs/heads/main/deaths_per_year_country.csv"
+    },
+    "params": [
+      {
+        "name": "Country_selection",
+        "bind": {
+          "input": "select",
+          "options": [
+            null,
+            "Cambodia",
+            "Indonesia",
+            "Laos",
+            "Malaysia",
+            "Myanmar",
+            "Philippines",
+            "Thailand",
+            "Timor-Leste",
+            "Vietnam"
+          ],
+          "labels": [
+            "Show All",
+            "Cambodia",
+            "Indonesia",
+            "Laos",
+            "Malaysia",
+            "Myanmar",
+            "Philippines",
+            "Thailand",
+            "Timor-Leste",
+            "Vietnam"
+          ],
+          "name": "Country Selection: "
+        }
+      }
+    ],
+    "transform": [
+      {
+        "filter": "Country_selection == null || datum.Country == Country_selection"
+      }
+    ],
+    "mark": {"type": "area", "interpolate": "monotone"},
+    "encoding": {
+      "x": {
+        "field": "Year",
+        "type": "temporal",
+        "axis": {"title": "Year"}
+      },
+      "y": {
+        "field": "Deaths",
+        "type": "quantitative",
+        "stack": "zero",
+        "axis": {"title": "Number of Deaths"}
+      },
+      "color": {
+        "field": "Country",
+        "type": "nominal",
+        "title": "Country",
+        "sort": {
+          "field": "Deaths",
+          "op": "sum",
+          "order": "descending"
+        }
+      },
+      "tooltip": [
+        {"field": "Year", "type": "nominal", "timeUnit": "year", "title": "Year"},
+        {"field": "Deaths", "type": "quantitative", "title": "Number of Deaths"},
+        {"field": "Country", "type": "nominal", "title": "Country"}
+      ]
+    }
+  }
+  

@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 700,
+  "height": 300,
+  "background": "#fdf9f4",
+  "data": {
+    "values": [
+      {"Country": "Cambodia", "Disaster Type": "Flood", "Frequency": 6, "Proportion": 0.857143},
+      {"Country": "Cambodia", "Disaster Type": "Storm", "Frequency": 1, "Proportion": 0.142857},
+      {"Country": "Indonesia", "Disaster Type": "Drought", "Frequency": 1, "Proportion": 0.006803},
+      {"Country": "Indonesia", "Disaster Type": "Earthquake", "Frequency": 26, "Proportion": 0.176871},
+      {"Country": "Indonesia", "Disaster Type": "Flood", "Frequency": 85, "Proportion": 0.578231},
+      {"Country": "Indonesia", "Disaster Type": "Landslide", "Frequency": 23, "Proportion": 0.156463},
+      {"Country": "Indonesia", "Disaster Type": "Storm", "Frequency": 4, "Proportion": 0.027211},
+      {"Country": "Indonesia", "Disaster Type": "Volcanic activity", "Frequency": 7, "Proportion": 0.047619},
+      {"Country": "Indonesia", "Disaster Type": "Wildfire", "Frequency": 1, "Proportion": 0.006803},
+      {"Country": "Laos", "Disaster Type": "Epidemic", "Frequency": 1, "Proportion": 0.100000},
+      {"Country": "Laos", "Disaster Type": "Flood", "Frequency": 8, "Proportion": 0.800000},
+      {"Country": "Laos", "Disaster Type": "Storm", "Frequency": 1, "Proportion": 0.100000},
+      {"Country": "Malaysia", "Disaster Type": "Earthquake", "Frequency": 1, "Proportion": 0.066667},
+      {"Country": "Malaysia", "Disaster Type": "Flood", "Frequency": 13, "Proportion": 0.866667},
+      {"Country": "Malaysia", "Disaster Type": "Landslide", "Frequency": 1, "Proportion": 0.066667},
+      {"Country": "Myanmar", "Disaster Type": "Earthquake", "Frequency": 3, "Proportion": 0.100000},
+      {"Country": "Myanmar", "Disaster Type": "Epidemic", "Frequency": 1, "Proportion": 0.033333},
+      {"Country": "Myanmar", "Disaster Type": "Flood", "Frequency": 13, "Proportion": 0.433333},
+      {"Country": "Myanmar", "Disaster Type": "Landslide", "Frequency": 8, "Proportion": 0.266667},
+      {"Country": "Myanmar", "Disaster Type": "Mass movement (dry)", "Frequency": 1, "Proportion": 0.033333},
+      {"Country": "Myanmar", "Disaster Type": "Storm", "Frequency": 4, "Proportion": 0.133333},
+      {"Country": "Philippines", "Disaster Type": "Earthquake", "Frequency": 16, "Proportion": 0.107383},
+      {"Country": "Philippines", "Disaster Type": "Epidemic", "Frequency": 9, "Proportion": 0.060403},
+      {"Country": "Philippines", "Disaster Type": "Flood", "Frequency": 40, "Proportion": 0.268456},
+      {"Country": "Philippines", "Disaster Type": "Landslide", "Frequency": 5, "Proportion": 0.033557},
+      {"Country": "Philippines", "Disaster Type": "Storm", "Frequency": 78, "Proportion": 0.523490},
+      {"Country": "Philippines", "Disaster Type": "Volcanic activity", "Frequency": 1, "Proportion": 0.006711},
+      {"Country": "Singapore", "Disaster Type": "Epidemic", "Frequency": 1, "Proportion": 1.000000},
+      {"Country": "Thailand", "Disaster Type": "Earthquake", "Frequency": 2, "Proportion": 0.057143},
+      {"Country": "Thailand", "Disaster Type": "Epidemic", "Frequency": 2, "Proportion": 0.057143},
+      {"Country": "Thailand", "Disaster Type": "Extreme temperature", "Frequency": 2, "Proportion": 0.057143},
+      {"Country": "Thailand", "Disaster Type": "Flood", "Frequency": 21, "Proportion": 0.600000},
+      {"Country": "Thailand", "Disaster Type": "Storm", "Frequency": 8, "Proportion": 0.228571},
+      {"Country": "Timor-Leste", "Disaster Type": "Earthquake", "Frequency": 1, "Proportion": 0.250000},
+      {"Country": "Timor-Leste", "Disaster Type": "Epidemic", "Frequency": 1, "Proportion": 0.250000},
+      {"Country": "Timor-Leste", "Disaster Type": "Flood", "Frequency": 1, "Proportion": 0.250000},
+      {"Country": "Timor-Leste", "Disaster Type": "Storm", "Frequency": 1, "Proportion": 0.250000},
+      {"Country": "Vietnam", "Disaster Type": "Epidemic", "Frequency": 1, "Proportion": 0.012987},
+      {"Country": "Vietnam", "Disaster Type": "Flood", "Frequency": 36, "Proportion": 0.467532},
+      {"Country": "Vietnam", "Disaster Type": "Storm", "Frequency": 40, "Proportion": 0.519481}
+    ]
+  },
+  "transform": [
+    {
+      "aggregate": [{"op": "sum", "field": "Frequency", "as": "Total Frequency"}],
+      "groupby": ["Country"]
+    }
+  ],
+  "mark": {"type": "bar", "color": "#d35400"},
+  "encoding": {
+    "x": {
+      "field": "Country",
+      "type": "nominal",
+      "axis": {"labelAngle": -45}
+    },
+    "y": {
+      "field": "Total Frequency",
+      "type": "quantitative",
+      "axis": {"title": "Total Frequency of Natural Disasters"}
+    },
+    "tooltip": [
+      {"field": "Country", "type": "nominal", "title": "Country"},
+      {"field": "Total Frequency", "type": "quantitative", "title": "Total Frequency of Natural Disasters"}
+    ]
+  }
+}

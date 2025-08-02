@@ -1,0 +1,188 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "width": 750,
+  "height": 400,
+  "background": "#fdf9f4",
+  "projection": {
+    "type": "equalEarth"
+  },
+  "params": [
+    {
+      "name": "DisasterType_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Drought",
+          "Earthquake",
+          "Epidemic",
+          "Extreme temperature",
+          "Flood",
+          "Landslide",
+          "Mass movement (dry)",
+          "Storm",
+          "Volcanic activity",
+          "Wildfire"
+        ],
+        "labels": [
+          "Show All",
+          "Drought",
+          "Earthquake",
+          "Epidemic",
+          "Extreme temperature",
+          "Flood",
+          "Landslide",
+          "Mass movement (dry)",
+          "Storm",
+          "Volcanic activity",
+          "Wildfire"
+        ],
+        "name": "Disaster Type Selection: "
+      }
+    },
+    {
+      "name": "Country_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          "Cambodia",
+          "Indonesia",
+          "Laos",
+          "Malaysia",
+          "Myanmar",
+          "Philippines",
+          "Singapore",
+          "Thailand",
+          "Timor-Leste",
+          "Vietnam"
+        ],
+        "labels": [
+          "Show All",
+          "Cambodia",
+          "Indonesia",
+          "Laos",
+          "Malaysia",
+          "Myanmar",
+          "Philippines",
+          "Singapore",
+          "Thailand",
+          "Timor-Leste",
+          "Vietnam"
+        ],
+        "name": "Country Selection: "
+      }
+    },
+    {
+      "name": "Year_selection",
+      "bind": {
+        "input": "select",
+        "options": [
+          null,
+          2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021
+        ],
+        "labels": [
+          "Show All", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"
+        ],
+        "name": "Year Selection: "
+      }
+    }
+  ],
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JuanNathan/DataVisualisation2/refs/heads/main/ne_50m.json",
+        "format": {
+          "type": "topojson",
+          "feature": "ne_50m_admin_0_countries"
+        }
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "lightgray",
+        "stroke": "gray"
+      }
+    },
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/JuanNathan/DataVisualisation2/refs/heads/main/natural_disasters_sea.csv"
+      },
+      "transform": [
+        {
+          "filter": "DisasterType_selection == null || datum['Disaster Type'] == DisasterType_selection"
+        },
+        {
+          "filter": "Country_selection == null || datum.Country == Country_selection"
+        },
+        {
+          "filter": "Year_selection == null || year(datum['Start Year']) == Year_selection"
+        }
+      ],
+      "mark": {
+        "type": "circle"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Casualties",
+          "type": "quantitative",
+          "title": "Number of Casualties",
+          "scale": {
+            "domain": [0, 120000],
+            "range": [15, 1500]
+          }
+        },
+        "color": {
+          "field": "Disaster Type",
+          "type": "nominal",
+          "title": "Disaster Type"
+        },
+        "tooltip": [
+          {
+            "field": "Country",
+            "type": "nominal",
+            "title": "Country"
+          },
+          {
+            "field": "Disaster Type",
+            "type": "nominal",
+            "title": "Disaster Type"
+          },
+          {
+            "field": "Event Name",
+            "type": "nominal",
+            "title": "Name"
+          },
+          {
+            "field": "Casualties",
+            "type": "quantitative",
+            "title": "Casualties"
+          },
+          {
+            "field": "Latitude",
+            "type": "quantitative",
+            "title": "Latitude"
+          },
+          {
+            "field": "Longitude",
+            "type": "quantitative",
+            "title": "Longitude"
+          },
+          {
+            "field": "Start Year",
+            "type": "temporal",
+            "title": "Year",
+            "timeUnit": "year"
+          }
+        ]
+      }
+    }
+  ]
+}
