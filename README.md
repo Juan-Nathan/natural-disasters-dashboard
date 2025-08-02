@@ -79,6 +79,7 @@ These filters help users **customize their view** based on specific interests or
 - Yearly trends showing spikes or declines in disaster deaths
 - Countries with highest average death toll per disaster type
 
-## 👥 Authors
+## 👥 Author
 
 Developed by Juan Nathan for FIT3179 at Monash University.
+
