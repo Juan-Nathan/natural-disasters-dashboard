@@ -2,6 +2,9 @@
 
 This project is a data visualization dashboard focused on natural disasters in Southeast Asia between 2010 and 2021. It aims to provide an interactive and insightful overview of disaster patterns, impacts, and trends in the region, empowering policymakers, researchers, and the public to better understand and respond to natural disaster risks.
 
+## 🌐 Live Demo
+> 🚀 [View the Dashboard Here](https://juan-nathan.github.io/natural-disasters-dataviz-dashboard/)
+
 ## 📌 Domain & Purpose
 
 Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was created to:
@@ -63,9 +66,11 @@ These filters help users **customize their view** based on specific interests or
 
 ## ⚙️ Technologies Used
 
-- **Vega-Lite** for declarative charting  
+- **Vega-Lite** for declarative and interactive data visualizations
 - **HTML/CSS/JavaScript** for web structure and interactivity  
-- Optional: [Specify frameworks or libraries if used, e.g., D3.js, Observable, Leaflet]
+- **Natural Earth Data** ([naturalearthdata.com](https://www.naturalearthdata.com)) for obtaining high-quality spatial data of country boundaries
+- **Mapshaper** ([mapshaper.org](https://mapshaper.org)) for converting spatial data to TopoJSON format compatible with Vega-Lite
+- **TopoJSON** for compact and accurate geographic representation, supporting efficient rendering, clean shape simplification, and native compatibility with Vega-Lite v5.
 
 ## 📌 Key Insights
 
@@ -73,3 +78,7 @@ These filters help users **customize their view** based on specific interests or
 - Dominant disaster types per country
 - Yearly trends showing spikes or declines in disaster deaths
 - Countries with highest average death toll per disaster type
+
+## 👥 Authors
+
+Developed by Juan Nathan for FIT3179 at Monash University.
