@@ -81,5 +81,4 @@ These filters help users **customize their view** based on specific interests or
 
 ## 👥 Author
 
-Developed by Juan Nathan for FIT3179 at Monash University.
-
+Developed by Juan Nathan.
