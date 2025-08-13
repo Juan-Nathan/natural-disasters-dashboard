@@ -2,8 +2,12 @@
 
 This project is a data visualization dashboard focused on natural disasters in Southeast Asia between 2010 and 2021, created using Vega-Lite. It aims to provide an interactive and insightful overview of disaster patterns, impacts, and trends in the region, empowering policymakers, researchers, and the public to better understand and respond to natural disaster risks.
 
+---
+
 ## 🌐 Live Demo
 > 🚀 [View the Dashboard Here](https://juan-nathan.github.io/natural-disasters-dashboard/)
+
+---
 
 ## 📌 Domain & Purpose
 
@@ -14,12 +18,16 @@ Natural disasters are a persistent threat in Southeast Asia, impacting millions 
 - **Support** disaster risk assessment, preparedness, and policy-making.
 - **Raise awareness** among citizens, researchers, and environmental agencies.
 
+---
+
 ## 👥 Target Audience
 
 - Policymakers & Government Agencies  
 - Researchers & Academics  
 - Environmental and Humanitarian Organizations  
 - General Public interested in disaster risk awareness
+
+---
 
 ## 📊 Data Source
 
@@ -31,6 +39,8 @@ The dataset was sourced from [Open Development Mekong](https://data.opendevelopm
 - Country and Year of occurrence
 
 The data has been **cleaned**, **filtered**, and restricted to **natural disasters between 2010 and 2021**.
+
+---
 
 ## 🔍 Visualizations & Features
 
@@ -64,6 +74,8 @@ The dashboard includes **interactive filters** for:
 
 These filters help users **customize their view** based on specific interests or regions, making exploration more personalized and insightful.
 
+---
+
 ## ⚙️ Technologies Used
 
 - **Vega-Lite** for declarative and interactive data visualizations
@@ -72,12 +84,16 @@ These filters help users **customize their view** based on specific interests or
 - **Mapshaper** ([mapshaper.org](https://mapshaper.org)) for converting spatial data to TopoJSON format compatible with Vega-Lite
 - **TopoJSON** for compact and accurate geographic representation, supporting efficient rendering, clean shape simplification, and native compatibility with Vega-Lite v5.
 
+---
+
 ## 📌 Key Insights
 
 - Regional hotspots for frequent and deadly disasters
 - Dominant disaster types per country
 - Yearly trends showing spikes or declines in disaster deaths
 - Countries with highest average death toll per disaster type
+
+---
 
 ## 👤 Author
 
