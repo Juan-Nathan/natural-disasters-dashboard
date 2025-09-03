@@ -16,10 +16,10 @@ Natural disasters are a persistent threat in Southeast Asia, impacting millions 
 
 ## Target Audience
 
-- Policymakers & Government Agencies  
-- Researchers & Academics  
-- Environmental and Humanitarian Organizations  
-- General Public interested in disaster risk awareness
+- Policymakers & government agencies  
+- Researchers & academics  
+- Environmental and humanitarian organizations  
+- General public interested in disaster risk awareness
 
 ## Data Source
 
@@ -86,6 +86,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
