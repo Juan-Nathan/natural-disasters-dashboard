@@ -25,12 +25,24 @@ Natural disasters are a persistent threat in Southeast Asia, impacting millions 
 
 The dataset was sourced from [Open Development Mekong](https://data.opendevelopmentmekong.net/), and includes key attributes such as:
 
-- Latitude and Longitude  
-- Disaster Type  
-- Number of Deaths and Injuries  
-- Country and Year of occurrence
+- Latitude and longitude  
+- Disaster type  
+- Number of deaths and injuries  
+- Country and year of occurrence
 
 The data has been cleaned, filtered, and restricted to natural disasters between 2010 and 2021.
+
+## Technologies Used
+
+- **Vega-Lite** for declarative and interactive data visualizations
+
+- **HTML/CSS/JavaScript** for web structure and interactivity
+
+- **Natural Earth Data** ([naturalearthdata.com](https://www.naturalearthdata.com)) for obtaining high-quality spatial data of country boundaries
+
+- **Mapshaper** ([mapshaper.org](https://mapshaper.org)) for converting spatial data to TopoJSON format compatible with Vega-Lite
+
+- **TopoJSON** for compact and accurate geographic representation, supporting efficient rendering, clean shape simplification, and native compatibility with Vega-Lite
 
 ## Visualizations & Features
 
@@ -64,14 +76,6 @@ The dashboard includes **interactive filters** for:
 
 These filters help users customize their view based on specific interests or regions, making exploration more personalized and insightful.
 
-## Technologies Used
-
-- **Vega-Lite** for declarative and interactive data visualizations
-- **HTML/CSS/JavaScript** for web structure and interactivity  
-- **Natural Earth Data** ([naturalearthdata.com](https://www.naturalearthdata.com)) for obtaining high-quality spatial data of country boundaries
-- **Mapshaper** ([mapshaper.org](https://mapshaper.org)) for converting spatial data to TopoJSON format compatible with Vega-Lite
-- **TopoJSON** for compact and accurate geographic representation, supporting efficient rendering, clean shape simplification, and native compatibility with Vega-Lite v5.
-
 ## Key Insights
 
 - Regional hotspots for frequent and deadly disasters
@@ -82,6 +86,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
