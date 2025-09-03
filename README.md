@@ -30,7 +30,7 @@ The dataset was sourced from [Open Development Mekong](https://data.opendevelopm
 - Number of Deaths and Injuries  
 - Country and Year of occurrence
 
-The data has been **cleaned**, **filtered**, and restricted to **natural disasters between 2010 and 2021**.
+The data has been cleaned, filtered, and restricted to natural disasters between 2010 and 2021.
 
 ## Visualizations & Features
 
@@ -82,5 +82,6 @@ These filters help users **customize their view** based on specific interests or
 ## Author
 
 Developed by Juan Nathan.
+
 
 
