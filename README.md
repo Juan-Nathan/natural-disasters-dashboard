@@ -14,13 +14,6 @@ Natural disasters are a persistent threat in Southeast Asia, impacting millions 
 - **Support** disaster risk assessment, preparedness, and policy-making.
 - **Raise awareness** among citizens, researchers, and environmental agencies.
 
-## Target Audience
-
-- Policymakers & government agencies  
-- Researchers & academics  
-- Environmental and humanitarian organizations  
-- General public interested in disaster risk awareness
-
 ## Data Source
 
 The dataset was sourced from [Open Development Mekong](https://data.opendevelopmentmekong.net/), and includes key attributes such as:
@@ -86,6 +79,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
