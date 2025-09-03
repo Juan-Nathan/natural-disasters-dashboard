@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Natural Disaster Visualisations | Southeast Asia</title>
+  <title>Natural Disaster Dashboard | Southeast Asia</title>
   <!-- Import Vega & Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
@@ -36,7 +36,7 @@
       </div>
     </div>
 
-    <!-- First Visualisation: Proportional Symbol Map -->
+    <!-- First Visualization: Proportional Symbol Map -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -56,7 +56,7 @@
       </div>
     </div>
 
-    <!-- Second Visualisation: Choropleth Map -->
+    <!-- Second Visualization: Choropleth Map -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -73,7 +73,7 @@
       </div>
     </div>
 
-    <!-- Third Visualisation: Bar Chart -->
+    <!-- Third Visualization: Bar Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <!-- Fourth Visualisation: Donut Chart -->
+    <!-- Fourth Visualization: Donut Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -109,7 +109,7 @@
       </div>
     </div>
 
-    <!-- Fifth Visualisation: Stacked Area Chart -->
+    <!-- Fifth Visualization: Stacked Area Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -127,7 +127,7 @@
       </div>
     </div>
 
-    <!-- Sixth Visualisation: Lollipop Chart -->
+    <!-- Sixth Visualization: Lollipop Chart -->
     <div class="pure-g">
       <div class="pure-u-1-1 full-width-section">
         <div class="description">
@@ -146,55 +146,56 @@
 
     <div class="pure-g">
       <div class="pure-u-1-1 small-font">
-        <p>This visualisation was created by Juan Nathan. Data sourced from <a href="https://data.opendevelopmentmekong.net/dataset/disaster-in-southeast-asia-from-1900-to-2021" target="_blank">Open Development Mekong</a>.</p>
+        <p>This dashboard was created by Juan Nathan on 13/10/2024. Data sourced from <a href="https://data.opendevelopmentmekong.net/dataset/disaster-in-southeast-asia-from-1900-to-2021" target="_blank">Open Development Mekong</a>.</p>
       </div>
     </div>
 
   </div> <!-- end page -->
 
   <script type="text/javascript">
-    // First visualisation
+    // First visualization
     var specVis1 = 'natural_disasters.vg.json';
 
-    // Second visualisation
+    // Second visualization
     var specVis2 = 'natural_disaster_risk.vg.json';
 
-    // Third visualisation
+    // Third visualization
     var specVis3 = 'natural_disasters_frequency.vg.json';
 
-    // Fourth visualisation
+    // Fourth visualization
     var specVis4 = 'natural_disasters_proportion.vg.json';
 
-    // Fifth visualisation
+    // Fifth visualization
     var specVis5 = 'deaths_per_year_country.vg.json';
 
-    // Sixth visualisation
+    // Sixth visualization
     var specVis6 = 'avg_deaths_per_disaster_type.vg.json';
 
-    // Embed first visualisation
+    // Embed first visualization
     vegaEmbed('#vis1', specVis1, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    // Embed second visualisation
+    // Embed second visualization
     vegaEmbed('#vis2', specVis2, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    // Embed third visualisation
+    // Embed third visualization
     vegaEmbed('#vis3', specVis3, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    // Embed fourth visualisation
+    // Embed fourth visualization
     vegaEmbed('#vis4', specVis4, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    // Embed fifth visualisation
+    // Embed fifth visualization
     vegaEmbed('#vis5', specVis5, { "actions": false }).then(function (result) {
     }).catch(console.error);
 
-    // Embed sixth visualisation
+    // Embed sixth visualization
     vegaEmbed('#vis6', specVis6, { "actions": false }).then(function (result) {
     }).catch(console.error);
   </script>
 </body>
 
 </html>
+
