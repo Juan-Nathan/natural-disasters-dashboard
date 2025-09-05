@@ -41,20 +41,16 @@ This dashboard includes a variety of visualizations designed to highlight differ
 ### Maps
 - **Proportional Symbol Map**  
   Circles represent both the **location** and **scale** of disaster impacts in terms of casualties.
-
 - **Choropleth Map**  
   Color-coded risk levels per country, helping identify **high-risk regions** in Southeast Asia.
 
 ### Charts
 - **Bar Chart**  
   Shows the **frequency** of disasters per country for comparative insights.
-
 - **Donut Chart**  
   Displays the **distribution of disaster types** within each country.
-
 - **Stacked Area Chart**  
   Tracks the **trend of deaths over time**, showing changes in disaster severity across the years.
-
 - **Lollipop Chart**  
   Highlights the **average death toll per disaster type**, identifying the **deadliest disaster categories**.
 
@@ -76,6 +72,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
