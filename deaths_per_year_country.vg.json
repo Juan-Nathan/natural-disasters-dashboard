@@ -4,7 +4,7 @@
     "height": 400,
     "background": "#fdf9f4",
     "data": {
-      "url": "https://raw.githubusercontent.com/JuanNathan/DataVisualisation2/refs/heads/main/deaths_per_year_country.csv"
+      "url": "https://raw.githubusercontent.com/Juan-Nathan/natural-disasters-dashboard/refs/heads/main/deaths_per_year_country.csv"
     },
     "params": [
       {
@@ -76,3 +76,4 @@
   }
 
   
+
