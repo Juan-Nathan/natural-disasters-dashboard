@@ -80,9 +80,10 @@
       "color": {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type", "legend": { "orient": "bottom" }},
       "tooltip": [
         {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type"},
-        {"field": "Proportion", "type": "quantitative", "title": "Proportion"},
+        {"field": "Proportion", "type": "quantitative", "title": "Proportion", "format": ".2f"},
         {"field": "Frequency", "type": "quantitative", "title": "Frequency"}
       ]
     }
   }
+
 
