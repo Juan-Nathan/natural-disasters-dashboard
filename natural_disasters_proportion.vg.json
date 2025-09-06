@@ -64,7 +64,7 @@
             "Timor-Leste",
             "Vietnam"
           ],
-          "name": "Country Selection: "
+          "name": "Country: "
         },
         "value": "Cambodia"
       }
@@ -77,7 +77,7 @@
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
       "theta": {"field": "Proportion", "type": "quantitative", "title": "Proportion"},
-      "color": {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type", "legend": {"labelLimit": 0}},
+      "color": {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type", "legend": { "labelLimit": 0, "orient": "bottom" }},
       "tooltip": [
         {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type"},
         {"field": "Proportion", "type": "quantitative", "title": "Proportion"},
@@ -87,3 +87,4 @@
   }
 
   
+
