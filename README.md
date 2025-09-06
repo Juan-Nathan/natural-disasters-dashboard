@@ -8,7 +8,7 @@ This project is a data visualization dashboard focused on **natural disasters in
 
 ## Domain & Purpose
 
-Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was created to:
+Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This dashboard was created to:
 
 - **Understand** the frequency, type, and impact of natural disasters from 2010 to 2021.
 - **Visualize** regional differences in disaster occurrence and severity.
@@ -48,14 +48,14 @@ This dashboard includes a variety of visualizations designed to highlight differ
 - **Bar Chart**  
   Shows the **frequency** of disasters per country for comparative insights.
 - **Donut Chart**  
-  Displays the **distribution of disaster types** within each country.
+  Displays the **distribution** of disaster types within each country.
 - **Stacked Area Chart**  
-  Tracks the **trend of deaths over time**, showing changes in disaster severity across the years.
+  Tracks the **trend of deaths** over time, showing changes in disaster severity across the years.
 - **Lollipop Chart**  
-  Highlights the **average death toll per disaster type**, identifying the **deadliest disaster categories**.
+  Highlights the **average death toll** per disaster type, identifying the deadliest disaster categories.
 
 ### Interactivity
-The dashboard includes **interactive filters** for:
+The dashboard includes interactive filters for:
 - Country  
 - Disaster Type  
 - Year
@@ -67,11 +67,12 @@ These filters help users customize their view based on specific interests or reg
 - Regional hotspots for frequent and deadly disasters
 - Dominant disaster types per country
 - Yearly trends showing spikes or declines in disaster deaths
-- Countries with highest average death toll per disaster type
+- The deadliest disaster types
 
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
