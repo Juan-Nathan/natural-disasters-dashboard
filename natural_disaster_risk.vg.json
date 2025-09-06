@@ -5,7 +5,7 @@
   "background": "#fdf9f4",
   "projection": {"type": "equalEarth"},
   "data": {
-    "url": "https://raw.githubusercontent.com/JuanNathan/FIT3179/main/Week9HW/ne_110m.topojson",
+    "url": "https://raw.githubusercontent.com/Juan-Nathan/natural-disasters-dashboard/refs/heads/main/ne_110m.topojson",
     "format": {"type": "topojson", "feature": "ne_110m_admin_0_countries"}
   },
   "transform": [
@@ -53,3 +53,4 @@
     ]
   }
 }
+
