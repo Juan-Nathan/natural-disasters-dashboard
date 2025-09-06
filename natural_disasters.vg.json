@@ -105,7 +105,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/JuanNathan/DataVisualisation2/refs/heads/main/natural_disasters_sea.csv"
+        "url": "https://raw.githubusercontent.com/Juan-Nathan/natural-disasters-dashboard/refs/heads/main/natural_disasters_sea.csv"
       },
       "transform": [
         {
@@ -186,4 +186,5 @@
     }
   ]
 }
+
 
