@@ -46,7 +46,7 @@ This dashboard includes a variety of visualizations designed to highlight differ
 
 ### Charts
 - **Bar Chart**  
-  Shows the **frequency** of disasters per country for comparative insights.
+  Shows the **total frequency** of disasters per country for comparative insights.
 - **Donut Chart**  
   Displays the **distribution** of disaster types within each country.
 - **Stacked Area Chart**  
@@ -72,6 +72,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
