@@ -40,7 +40,7 @@ This dashboard includes a variety of visualizations designed to highlight differ
 
 ### Maps
 - **Proportional Symbol Map**  
-  Circles represent both the **location** and **scale** of disaster impacts in terms of casualties.
+  Circles represent both the **location** and **scale** of disaster impacts in terms of casualties, with colors indicating the disaster type.
 - **Choropleth Map**  
   Color-coded risk levels per country, helping identify **high-risk regions** in Southeast Asia.
 
