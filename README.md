@@ -29,7 +29,7 @@ The data has been cleaned, filtered, and restricted to natural disasters between
 ## Technologies Used
 
 - **Vega-Lite** for declarative and interactive data visualizations
-- **HTML/CSS/JavaScript** for web structure and interactivity
+- **HTML** for web structure, **CSS** for styling and design
 - **Natural Earth Data** ([naturalearthdata.com](https://www.naturalearthdata.com)) for obtaining high-quality spatial data of country boundaries
 - **Mapshaper** ([mapshaper.org](https://mapshaper.org)) for converting spatial data to TopoJSON format compatible with Vega-Lite
 - **TopoJSON** for compact and accurate geographic representation, supporting efficient rendering, clean shape simplification, and native compatibility with Vega-Lite
