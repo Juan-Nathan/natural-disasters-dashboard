@@ -8,7 +8,7 @@ This project is a data visualization dashboard focused on **natural disasters in
 
 ## Domain & Purpose
 
-Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was created to:
+Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was developed to:
 
 - **Understand** the frequency, type, and impact of natural disasters from 2010 to 2021.
 - **Visualize** regional differences in disaster occurrence and severity.
@@ -72,6 +72,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
