@@ -1,6 +1,6 @@
 # 🌋 Vega-Lite Natural Disasters Dashboard
 
-This project is a data visualization dashboard focused on **natural disasters in Southeast Asia between 2010 and 2021**, created using Vega-Lite. It aims to provide an interactive and insightful overview of disaster patterns, impacts, and trends in the region, empowering policymakers, researchers, and the public to better understand and respond to natural disaster risks.
+This project is a data visualization dashboard focused on **natural disasters in Southeast Asia between 2010 and 2021**, developed using Vega-Lite. It aims to provide an interactive and insightful overview of disaster patterns, impacts, and trends in the region, empowering policymakers, researchers, and the public to better understand and respond to natural disaster risks.
 
 ## Live Demo
 
@@ -8,7 +8,7 @@ This project is a data visualization dashboard focused on **natural disasters in
 
 ## Domain & Purpose
 
-Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was developed to:
+Natural disasters are a persistent threat in Southeast Asia, impacting millions of lives each decade. This visualization project was built to:
 
 - **Understand** the frequency, type, and impact of natural disasters from 2010 to 2021.
 - **Visualize** regional differences in disaster occurrence and severity.
@@ -72,6 +72,7 @@ These filters help users customize their view based on specific interests or reg
 ## Author
 
 Developed by Juan Nathan.
+
 
 
 
