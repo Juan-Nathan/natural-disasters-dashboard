@@ -77,7 +77,7 @@
     "mark": {"type": "arc", "innerRadius": 50},
     "encoding": {
       "theta": {"field": "Proportion", "type": "quantitative", "title": "Proportion"},
-      "color": {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type", "legend": { "orient": "bottom" }},
+      "color": {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type", "legend": { "orient": "bottom", "direction": "horizontal", "columns": 3 }},
       "tooltip": [
         {"field": "Disaster Type", "type": "nominal", "title": "Disaster Type"},
         {"field": "Proportion", "type": "quantitative", "title": "Proportion", "format": ".2f"},
@@ -85,3 +85,4 @@
       ]
     }
   }
+
